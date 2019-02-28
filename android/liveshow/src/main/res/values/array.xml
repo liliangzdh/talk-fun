@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mode">
+        <item>直播ID</item>
+        <item>点播ID</item>
+    </string-array>
+</resources>

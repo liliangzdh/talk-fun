@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/play_login_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/etID"
+        style="@style/PlaybackLoginEdtStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_round"
+        android:drawableRight="@mipmap/down_icon_normal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="@string/playId"
+        android:textCursorDrawable="@null" />
+
+    <EditText
+        android:id="@+id/edt_playback_psw"
+        style="@style/LiveLoginEdtStyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/bottom_round"
+        android:drawableRight="@mipmap/key_logo_normal"
+        android:hint="@string/key"
+        android:inputType="textPassword"
+        android:textCursorDrawable="@null" />
+
+    <include layout="@layout/tip_layout" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        style="@style/LoginButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
+        android:text="@string/playback_log_label" />
+
+    <Button
+        android:id="@+id/btn_downloadLogin"
+        style="@style/LoginButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_white_button"
+        android:text="@string/playback_download"
+        android:textColor="@color/secondaryTextColor" />
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_icon"-->
+    <!--style="@style/tab_image_style"-->
+    <!--android:src="@drawable/chat_selected" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_text"-->
+    <!--style="@style/tab_style"-->
+    <!--android:layout_toRightOf="@+id/iv_chat"-->
+    <!--android:text="@string/chat" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_red_dot"-->
+    <!--style="@style/tab_dot"-->
+    <!--android:layout_alignTop="@id/chat_tab"-->
+    <!--android:layout_toEndOf="@id/chat_tab"-->
+    <!--android:layout_toRightOf="@id/chat_tab" />-->
+</RelativeLayout>

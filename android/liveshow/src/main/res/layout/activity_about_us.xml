@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+   >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        >
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        style="@style/about_us_text"
+        android:text="@string/about_us_one" />
+
+    <TextView
+        style="@style/about_us_text"
+        android:text="@string/about_us_two" />
+
+    <TextView
+        style="@style/about_us_text"
+        android:text="@string/about_us_three" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:text="点击"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+</LinearLayout>

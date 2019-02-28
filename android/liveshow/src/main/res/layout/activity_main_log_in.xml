@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/titlebar_color"
+        android:padding="6dp">
+
+        <ImageView
+            android:id="@+id/iv_chose_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="3dp"
+            android:src="@mipmap/go_back"></ImageView>
+
+        <TextView
+            android:id="@+id/tv_change_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:text="@string/change_to_live"
+            android:textSize="16sp"
+            android:textColor="#96ffffff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <include
+            android:id="@+id/tab"
+            layout="@layout/log_in_tab" />
+
+        <include
+            android:id="@+id/version_tip"
+            layout="@layout/version_and_apply_layout" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/version_tip"
+            android:layout_below="@id/tab" />
+    </RelativeLayout>
+
+
+</LinearLayout>

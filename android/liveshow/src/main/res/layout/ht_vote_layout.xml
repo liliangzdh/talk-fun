@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ht_dialog_fragment_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/ht_vote_layout_head" />
+    <!--   <View
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:background="@color/dividerColor" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_content_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            tools:text="XXXXX" />
+
+        <LinearLayout
+            android:id="@+id/ll_vote_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_vote_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:adjustViewBounds="true"
+                android:background="@color/black"
+                android:maxHeight="150dp"
+                android:maxWidth="100dp"
+                android:visibility="gone" />
+
+            <ListView
+                android:id="@+id/lv_option"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/dividerColor"
+                android:descendantFocusability="beforeDescendants"
+                android:divider="@null"
+                android:dividerHeight="0dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/vote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/ht_vote_btn_unchecked_bg"
+            android:clickable="false"
+            android:padding="8dp"
+            android:text="@string/ht_vote"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/answer_yourself"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/answer_correct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

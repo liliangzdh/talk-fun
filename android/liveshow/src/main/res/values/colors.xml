@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="login_text_color">#333333</color>
+    <color name="colorPrimary">#303a5e</color>
+    <color name="titlebar_color">#303a5e</color>
+    <color name="mode_select_bg">#3f4a73</color>
+    <color name="white">#ffffff</color>
+    <color name="translucent_black">#50000000</color>
+    <color name="translucent_white">#B2FFFFFF</color>
+    <color name="gray">#BDC0BA</color>
+    <color name="black">#000000</color>
+    <color name="blue">#4285f4</color>
+    <color name="tab_text_blue">#93a9d1</color>
+    <color name="green">#84bf07</color>
+    <color name="speed_tip">#22ac38</color>
+    <color name="network_tip">#eb6877</color>
+    <color name="light_gray">#eeeeee</color>
+    <color name="session_selected_color">#303a5e</color>
+    <color name="room_new_skin_bg">#222a46</color>
+    <color name="input_layout_bg">#303a5e</color>
+    <color name="expression_area_bg">#303a5e</color>
+    <color name="login_jump_activity_bg">#3850a0</color>
+    <color name="float_background">#50BCDBFB</color>
+    <!--<color name="darkPrimaryColor"></color>-->
+    <!--<color name="primaryColor"></color>-->
+    <!--<color name="lightPrimaryColor"></color>-->
+    <!--<color name="textColor"></color>-->
+    <!--<color name="accentColor"></color>-->
+    <!--<color name="primaryText"></color>-->
+    <color name="playback_session_time">#93a9d1</color>
+    <color name="netLine_unselected_bg">#ccc</color>
+    <color name="secondaryTextColor">#aaaaaa</color>
+    <color name="dividerColor">#BDC0BA</color>
+    <color name="light_orange">#fff4d4</color>
+    <color name="orange">#ffd085</color>
+    <color name="text_orange">#f08336</color>
+    <color name="translucence">#80000000</color>
+    <color name="jump_btn_stroke">#587FCD</color>
+    <color name="jump_btn_text">#A2B4F2</color>
+
+    <color name="expressionLayoutBackground">#FFFFFF</color>
+    <color name="change_tip_background">#FF0000</color>
+    <color name="change_tip_textcolor">#FFFFFF</color>
+    <color name="progress_color">#F12C26</color>
+    <color name="progress_bg_color">#333333</color>
+
+    <color name="login_gray">#AAA</color>
+    <color name="login_blue">#708FFF</color>
+
+    <color name="about_us_text_color">#333333</color>
+
+    <color name="shutUp_editText_bg">#eee</color>
+
+    <color name="primary_blue">#4285f4</color>
+    <color name="primary_orange">#FFFF6417</color>
+    <color name="transparent">#00000000</color>
+    <color name="list_popup_width_item_press">#A0000000</color>
+
+    <!--对话框-->
+    <color name="dialog_bg_color">#fff</color>
+    <color name="dialog_btn_pressed">#f5f5f5</color>
+    <color name="dialog_btn_normal">#ffffff</color>
+    <color name="dialog_title">#333</color>
+    <color name="dialog_content">#666</color>
+    <color name="dialog_btn_confirm_text">#3ac9ab</color>
+    <color name="dialog_btn_cancel_text">#999</color>
+</resources>

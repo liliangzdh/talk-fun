@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="教学内容："
+            app:layout_constraintEnd_toStartOf="@+id/rating_bar_content"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/rating_bar_content" />
+
+        <RatingBar
+            android:id="@+id/rating_bar_content"
+            style="?attr/ratingBarStyleIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="24dp"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:rating="5"
+            android:stepSize="0.5"
+            android:theme="@style/RatingBar_CustomColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_content"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="教学方法："
+            app:layout_constraintBottom_toBottomOf="@+id/rating_bar_method"
+            app:layout_constraintEnd_toStartOf="@+id/rating_bar_method"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@+id/tv_content" />
+
+        <RatingBar
+            android:id="@+id/rating_bar_method"
+            style="?attr/ratingBarStyleIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:rating="5"
+            android:stepSize="0.5"
+            android:theme="@style/RatingBar_CustomColor"
+            app:layout_constraintEnd_toEndOf="@+id/rating_bar_content"
+            app:layout_constraintStart_toEndOf="@+id/tv_method"
+            app:layout_constraintTop_toBottomOf="@+id/rating_bar_content" />
+
+        <TextView
+            android:id="@+id/tv_effect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="教学效果："
+            app:layout_constraintEnd_toStartOf="@+id/rating_bar_effect"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@+id/tv_method"
+            app:layout_constraintTop_toTopOf="@+id/rating_bar_effect" />
+
+
+        <RatingBar
+            android:id="@+id/rating_bar_effect"
+            style="?attr/ratingBarStyleIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:rating="5"
+            android:stepSize="0.5"
+            android:theme="@style/RatingBar_CustomColor"
+            app:layout_constraintEnd_toEndOf="@+id/rating_bar_content"
+            app:layout_constraintStart_toEndOf="@+id/tv_effect"
+            app:layout_constraintTop_toBottomOf="@+id/rating_bar_method" />
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="留言："
+            app:layout_constraintStart_toStartOf="@+id/tv_effect"
+            app:layout_constraintTop_toBottomOf="@+id/rating_bar_effect" />
+
+        <EditText
+            android:id="@+id/et_msg"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/dialog_et_bg"
+            android:gravity="start"
+            android:hint="想对老师说点什么..."
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_msg"
+            app:layout_constraintTop_toBottomOf="@+id/tv_msg" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/dialog_btn_bg"
+            android:text="提交"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_msg"
+            app:layout_constraintVertical_bias="0.0" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.NestedScrollView>

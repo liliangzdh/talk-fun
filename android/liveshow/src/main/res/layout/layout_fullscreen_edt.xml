@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_input_fullScreen_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/iv_expression_fullScreen"
+        android:background="@drawable/input_horizontal_bg">
+
+        <EditText
+            android:id="@+id/et_fullScreen_input"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fullScreen_input_Height"
+            android:layout_marginLeft="@dimen/fullScreen_input_marginLeft"
+            android:layout_toLeftOf="@+id/iv_send_fullScreen"
+            android:background="@null"
+            android:hint="@string/i_want_to_chat"
+            android:imeOptions="flagNoExtractUi"
+            android:maxLines="2"
+            android:padding="@dimen/edt_input_padding"
+            android:textColorHint="@color/white"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            />
+
+        <ImageView
+            android:id="@+id/iv_send_fullScreen"
+            android:layout_width="@dimen/fullScreen_expression_size"
+            android:layout_height="@dimen/fullScreen_expression_size"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/fullScreen_send_marginRight"
+            android:layout_marginRight="@dimen/fullScreen_send_marginRight"
+            android:src="@mipmap/send_horizontal" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_expression_fullScreen"
+        android:layout_width="@dimen/fullScreen_expression_size"
+        android:layout_height="@dimen/fullScreen_expression_size"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/fullScreen_expression_marginLeft"
+        android:layout_marginRight="@dimen/fullScreen_expression_marginRight"
+        android:src="@mipmap/expression_icon" />
+</RelativeLayout>

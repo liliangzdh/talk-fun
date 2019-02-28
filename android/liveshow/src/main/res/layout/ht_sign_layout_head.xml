@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--TODO:该文件第三方必须添加-->
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@mipmap/sign" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:singleLine="true" />
+
+    <ImageView
+        android:id="@+id/cancel"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:src="@mipmap/cancel_vote" />
+</LinearLayout>
+

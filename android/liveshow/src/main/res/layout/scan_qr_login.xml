@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize">
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/huan_tuo_icon" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_course_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:textColor="#333"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/login_password_layout"
+        style="@style/Login_edit_layout_style"
+        android:background="@drawable/login_edit_bg_selected">
+
+        <TextView
+            android:id="@+id/login_password_label"
+            style="@style/Login_textView_style"
+            android:text="@string/live_password" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <EditText
+                android:id="@+id/login_password_edit"
+                style="@style/Login_ediText_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:inputType="numberPassword"
+                android:textColorHint="@color/light_gray" />
+            <TextView
+                android:id="@+id/login_password_hint_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="6dp"
+                android:gravity="right|center_vertical"
+                android:background="@null"
+                android:hint="若是公开课,无需密码"
+                android:textColorHint="@color/light_gray"
+                android:textSize="16sp"
+                />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_nickname_layout"
+        style="@style/Login_edit_layout_style"
+        android:background="@drawable/login_edit_bg_selected">
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            style="@style/Login_textView_style"
+            android:text="@string/nickname_new" />
+
+        <EditText
+            android:id="@+id/ed_nickname_edit"
+            style="@style/Login_ediText_style"
+            android:background="@null" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_error_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:padding="5dp"
+        android:textColor="#ff0000"
+        android:text="" />
+    <Button
+        android:id="@+id/login_btn"
+        style="@style/LoginButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
+        android:text="@string/live_log_label" />
+</LinearLayout>

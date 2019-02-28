@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/play_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/room_new_skin_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/ppt_Layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+                <FrameLayout
+                    android:id="@+id/ppt_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true" />
+
+                <FrameLayout
+                    android:id="@+id/desktop_video_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <master.flame.danmaku.ui.widget.DanmakuView
+                    android:id="@+id/danmaku_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/change_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/change_tip_background"
+                    android:padding="5dp"
+                    android:text="正在切换中，请稍候..."
+                    android:textColor="@color/change_tip_textcolor"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <!--     <FrameLayout
+                     android:id="@+id/mongolia_layer"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent" />-->
+
+                <include layout="@layout/menu_top_layout"></include>
+
+                <include
+                    android:id="@+id/operation_btn_container"
+                    layout="@layout/menu_bottom_layout"></include>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/translucent_black"
+                android:visibility="gone">
+
+            </LinearLayout>
+
+            <com.talkfun.cloudlive.view.LiveMessageView
+                android:id="@+id/tab_container"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical" />
+            <!--    <include layout="@layout/tab_layout" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />-->
+        </LinearLayout>
+
+        <com.talkfun.cloudlive.view.InputBarView
+            android:id="@+id/inputEdt_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" />
+
+        <!--  <include
+              android:id="@+id/fullScreen_openInput_container"
+              layout="@layout/fullscreen_inputbar_open"></include>-->
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/video_container"
+        android:layout_width="160dp"
+        android:layout_height="120dp" />
+
+    <com.talkfun.cloudlive.view.DragFloatActionText
+        android:id="@+id/fab_float_window"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tv_float_window"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+</merge>

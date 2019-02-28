@@ -1,0 +1,70 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!-- 缩略图宽高-->
+    <dimen name="thumbnail_width">100dp</dimen>
+    <dimen name="thumbnail_height">75dp</dimen>
+    <!-- 列表项标题间距-->
+    <dimen name="list_item_title_margin_top">8dp</dimen>
+    <dimen name="list_item_title_margin_left">8dp</dimen>
+    <!-- 列表项标题字体大小-->
+    <dimen name="list_item_title_size">14sp</dimen>
+    <!-- 列表项内间距-->
+    <dimen name="list_item_padding_left">10dp</dimen>
+    <dimen name="list_item_padding_right">10dp</dimen>
+    <dimen name="list_item_padding_top">5dp</dimen>
+    <dimen name="list_item_padding_bottom">5dp</dimen>
+
+    <dimen name="tab_width">64dp</dimen>
+    <dimen name="tab_height">40dp</dimen>
+    <dimen name="network_dialog_title">16sp</dimen>
+    <dimen name="network_dialog_margin">8dp</dimen>
+    <dimen name="network_dialog_paddingLeft">8dp</dimen>
+    <dimen name="network_dialog_paddingRight">8dp</dimen>
+    <dimen name="network_dialog_paddingTop">4dp</dimen>
+    <dimen name="network_dialog_paddingBottom">4dp</dimen>
+    <dimen name="network_info_tip">14sp</dimen>
+    <dimen name="btn_line_text_size">14sp</dimen>
+    <dimen name="btn_line_height">70dp</dimen>
+    <dimen name="btn_line_width">35dp</dimen>
+    <dimen name="menu_icon_top_padding">6dp</dimen>
+    <dimen name="menu_icon_left_padding">4dp</dimen>
+    <dimen name="edt_input_height">45dp</dimen>
+    <dimen name="edt_icon_size">28dp</dimen>
+    <dimen name="edt_input_padding">4dp</dimen>
+    <dimen name="expression_layout_height">100dp</dimen>
+    <dimen name="chat_list_padding">8dp</dimen>
+    <dimen name="chat_list_dividerHeight">3dp</dimen>
+    <dimen name="question_list_dividerHeight">8dp</dimen>
+    <dimen name="dialog_speed_marginBottom">8dp</dimen>
+    <dimen name="network_dialog_textSize">14sp</dimen>
+    <dimen name="fullScreen_expression_size">28dp</dimen>
+    <dimen name="fullScreen_input_Height">35dp</dimen>
+    <dimen name="fullScreen_input_marginBottom">5dp</dimen>
+    <dimen name="fullScreen_input_marginTop">5dp</dimen>
+    <dimen name="fullScreen_input_marginRight">5dp</dimen>
+    <dimen name="fullScreen_input_marginLeft">5dp</dimen>
+    <dimen name="fullScreen_expressionView_height">50dp</dimen>
+    <dimen name="expression_size">40dp</dimen>
+    <dimen name="fullScreen_expression_marginLeft">10dp</dimen>
+    <dimen name="fullScreen_expression_marginRight">10dp</dimen>
+    <dimen name="fullScreen_send_marginRight">10dp</dimen>
+    <dimen name="guide_btn_marginBottom">20dp</dimen>
+    <dimen name="guide_cb_marginBottom">120dp</dimen>
+    <dimen name="guide_tip_margin">5dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="splash_tip_marginBottom">80dp</dimen>
+    <dimen name="splash_button_margin">8dp</dimen>
+    <dimen name="toolbar_icon_size">25dp</dimen>
+
+    <dimen name="login_width_pad">650px</dimen>
+
+
+    <dimen name="dialog_corner_radius">8dp</dimen>
+    <dimen name="dialog_btn_height">44dp</dimen>
+    <dimen name="dialog_content_text_size">16sp</dimen>
+    <dimen name="dialog_button_text_size">16sp</dimen>
+    <dimen name="dialog_content_line_space">8dp</dimen>
+</resources>

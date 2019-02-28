@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_expression_view_ipad"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"></LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edt_layout_bg"
+        android:padding="4dp">
+
+        <include
+            android:id="@+id/btn_send"
+            layout="@layout/flower_btn_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edt_icon_size"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+        <ImageView
+            android:id="@+id/iv_expression"
+            android:layout_width="@dimen/edt_icon_size"
+            android:layout_height="@dimen/edt_icon_size"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/btn_send"
+            android:src="@mipmap/expression_icon" />
+
+        <EditText
+            android:id="@+id/input_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/iv_expression"
+            android:layout_toStartOf="@id/iv_expression"
+            android:background="@null"
+            android:hint="@string/input_edt_hint"
+            android:maxLines="3"
+            android:padding="3dp"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+</LinearLayout>

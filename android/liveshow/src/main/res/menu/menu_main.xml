@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+  <!--  <item
+        android:id="@+id/setting"
+        android:title="@string/setting"
+        app:showAsAction="never"></item>-->
+    <item
+        android:id="@+id/video_save_list"
+        android:title="@string/video_save_list"
+        app:showAsAction="never"></item>
+   <!-- <item
+        android:id="@+id/help"
+        android:title="@string/help"
+        app:showAsAction="never"></item>-->
+    <item
+        android:id="@+id/about_us"
+        android:title="@string/about_us"
+        app:showAsAction="never"></item>
+</menu>

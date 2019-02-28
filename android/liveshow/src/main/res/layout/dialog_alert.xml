@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="270dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg_white"
+    android:orientation="vertical">
+    <!--
+        <LinearLayout
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/dialog_bg_color"
+                />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/dialog_title"
+                android:textSize="@dimen/title_text_size"
+                tools:text="标题"
+                />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/dialog_content"
+                android:lineSpacingExtra="@dimen/dialog_content_line_space"
+                android:textSize="@dimen/dialog_content_text_size"
+                tools:text="内容"
+                android:padding="5dp"
+                />
+
+            <View
+                style="@style/DivisionLine"
+                android:layout_marginTop="24dp" />
+            <Button
+                android:id="@+id/btn_confirm"
+                android:layout_width="270dp"
+                android:layout_height="@dimen/dialog_btn_height"
+                android:gravity="center"
+                android:background="@drawable/dialog_btn_bottom_corner_bg"
+                android:text="@string/confirm"
+                android:textColor="@color/dialog_btn_confirm_text"
+                android:textSize="@dimen/dialog_button_text_size"
+                />
+        </LinearLayout>
+
+    -->
+
+</LinearLayout>

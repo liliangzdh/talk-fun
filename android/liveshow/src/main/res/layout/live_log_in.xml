@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/live_login_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:focusable="true"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/edt_nickname"
+        style="@style/LiveLoginEdtStyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/top_round"
+        android:drawableRight="@mipmap/name_logo_focus"
+        android:hint="@string/nickname"
+        android:textCursorDrawable="@null">
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edt_room_id"
+        style="@style/LiveLoginEdtStyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="-1dp"
+        android:background="@drawable/bottom_noround"
+        android:drawableRight="@mipmap/down_icon_normal"
+        android:hint="@string/playId"
+        android:textCursorDrawable="@null" />
+
+    <EditText
+        android:id="@+id/edt_psw"
+        style="@style/LiveLoginEdtStyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="-1dp"
+        android:background="@drawable/bottom_round"
+        android:drawableRight="@mipmap/key_logo_normal"
+        android:inputType="textPassword"
+        android:hint="@string/key"
+        android:textCursorDrawable="@null" />
+
+   <include layout="@layout/tip_layout"/>
+    <Button
+        android:id="@+id/login"
+        style="@style/LoginButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
+        android:text="@string/live_log_label" />
+
+
+</LinearLayout>

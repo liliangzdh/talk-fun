@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--自定义RatingBar Color@android:style/Widget.Holo.RatingBar.Indicator-->
+    <style name="RatingBar_CustomColor" parent="Theme.AppCompat">
+        <!--Background Color-->
+        <item name="colorControlNormal">#D7D7D7</item>
+        <!--Progress Color-->
+        <item name="colorControlActivated">#F49800</item>
+    </style>
+
+</resources>

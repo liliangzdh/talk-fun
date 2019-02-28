@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_height"
+        android:background="#303a5e"
+        android:orientation="horizontal">
+
+        <com.flyco.tablayout.CommonTabLayout
+            android:id="@+id/common_tablayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tl:tl_indicator_anim_enable="false"
+            tl:tl_iconGravity="LEFT"
+            tl:tl_iconVisible="true"
+            tl:tl_indicator_corner_radius="1.5dp"
+            tl:tl_indicator_height="3dp"
+            tl:tl_textsize="14sp" />
+        <!-- <LinearLayout
+             android:id="@+id/ll_tablayout"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="#303a5e"
+             android:orientation="horizontal">
+
+             <RelativeLayout
+                 android:id="@+id/chat_tab_layout"
+                 style="@style/tab_parent_style">
+
+                 <ImageView
+                     android:id="@+id/iv_chat"
+                     style="@style/tab_image_style"
+                     android:src="@drawable/chat_selected" />
+
+                 <TextView
+                     android:id="@+id/chat_tab"
+                     style="@style/tab_style"
+                     android:layout_toRightOf="@+id/iv_chat"
+                     android:text="@string/chat" />
+
+                 <ImageView
+                     android:id="@+id/chat_red_dot"
+                     style="@style/tab_dot"
+                     android:layout_alignTop="@id/chat_tab"
+                     android:layout_toEndOf="@id/chat_tab"
+                     android:layout_toRightOf="@id/chat_tab" />
+
+             </RelativeLayout>
+
+             <RelativeLayout
+                 android:id="@+id/question_tab_layout"
+                 style="@style/tab_parent_style">
+
+                 <ImageView
+                     android:id="@+id/iv_ask"
+                     style="@style/tab_image_style"
+                     android:src="@drawable/ask_selected" />
+
+                 <TextView
+                     android:id="@+id/question_tab"
+                     style="@style/tab_style"
+                     android:layout_toRightOf="@+id/iv_ask"
+                     android:text="@string/question" />
+
+                 <ImageView
+                     android:id="@+id/question_red_dot"
+                     style="@style/tab_dot"
+                     android:layout_alignTop="@id/question_tab"
+                     android:layout_toEndOf="@id/question_tab"
+                     android:layout_toRightOf="@id/question_tab" />
+
+             </RelativeLayout>
+
+             <RelativeLayout
+                 android:id="@+id/notice_tab_layout"
+                 style="@style/tab_parent_style">
+
+                 <ImageView
+                     android:id="@+id/iv_broadcast"
+                     style="@style/tab_image_style"
+                     android:src="@drawable/broadcast_selected" />
+
+                 <TextView
+                     android:id="@+id/notice_tab"
+                     style="@style/tab_style"
+                     android:layout_toRightOf="@+id/iv_broadcast"
+                     android:text="@string/notice" />
+
+                 <ImageView
+                     android:id="@+id/notice_red_dot"
+                     style="@style/tab_dot"
+                     android:layout_alignTop="@id/notice_tab"
+                     android:layout_toEndOf="@id/notice_tab"
+                     android:layout_toRightOf="@id/notice_tab" />
+
+             </RelativeLayout>
+
+             <RelativeLayout
+                 android:id="@+id/album_tab_layout"
+                 style="@style/tab_parent_style"
+                 android:visibility="gone">
+
+                 <ImageView
+                     android:id="@+id/iv_album"
+                     style="@style/tab_image_style"
+                     android:src="@drawable/album_selected" />
+
+                 <TextView
+                     android:id="@+id/album_tab"
+                     style="@style/tab_style"
+                     android:layout_toRightOf="@+id/iv_album"
+                     android:text="@string/album" />
+
+                 <ImageView
+                     android:id="@+id/album_red_dot"
+                     style="@style/tab_dot"
+                     android:layout_alignTop="@id/album_tab"
+                     android:layout_toEndOf="@id/album_tab"
+                     android:layout_toRightOf="@id/album_tab" />
+             </RelativeLayout>
+         </LinearLayout>
+     -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_start_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/download_playback"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
